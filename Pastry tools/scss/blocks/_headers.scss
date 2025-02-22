@@ -100,10 +100,8 @@
     color: $accent;
     @include mediaTablet{
         padding-top: 80px;
+	margin-left: 20px;
     }
-	@media (max-width: 530px){
-		text-align:center;
-	}
 }
 .header__suptitle {
     font-size: 64px;
