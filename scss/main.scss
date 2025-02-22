@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+//base
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/mixins';
+
+//blocks
+@import './blocks/headers';
+@import './blocks/nav';
+@import './blocks/bread';
+@import './blocks/card';
+@import './blocks/discount';
+@import './blocks/about';
+@import './blocks/feature';
+@import './blocks/category';
+@import './blocks/swiper';
+@import './blocks/nav-icon';
+@import './blocks/footer';
+@import './blocks/tools';
+@import './blocks/header-form';
+@import './blocks/contacts';
+@import './blocks/form';

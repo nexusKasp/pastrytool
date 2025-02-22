@@ -1,0 +1,57 @@
+
+.bread__products-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        width: 158px;
+        height: 138px;
+        @include mediaTablet{
+            display: none;
+        }
+    }
+    &::after{
+        background-image: url('./../img/header/svg-burger/Whip.svg');
+        top: -150px;
+        right: -100px;
+        rotate: 270deg;
+    }
+    &::before{
+        background-image: url('./../img/header/svg-burger/Whip.svg');
+        top: 50%;
+        left: -140px;
+        rotate: 270deg;
+    }
+}
+.bread__products-card {
+   min-height: 431px;
+
+   background-image: url('./../img/background/backgroung-product.jpg');
+   background-position: center center; //x, y
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   border-radius: 8px;
+   
+   
+}
+.bread__products-inner {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font-accent;
+    color: $white;
+    
+}
+.bread__products-flex {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   column-gap: 80px;
+}

@@ -1,0 +1,14 @@
+.card-title{
+    font-size: 24px;
+}
+.card-btn {
+    font-weight: 300;
+    background-color: $brown;
+    padding: 14px 12px;
+    border-radius: 4px;
+    transition: .3s ease-in;
+
+    &:hover{
+        color: $accent;
+    }
+}

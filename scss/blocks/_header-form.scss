@@ -1,0 +1,12 @@
+.header-form {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 30px;
+    padding-bottom: 74px;
+
+	min-height: 60px;
+    @include mediaTablet{
+        min-height: 50px;
+    }
+}
