@@ -1,0 +1,55 @@
+.feature {
+    margin-bottom: 130px;
+}
+
+.feature__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        @include mediaTablet{
+            display: none;
+        }
+    }
+    &::after{
+        background-image: url('./../img/header/svg-burger/Glove.svg');
+        top: -250px;
+        right: 300px;
+        rotate: 270deg;
+        width: 119px;
+        height: 94px;
+    }
+    &::before{
+        background-image: url('./../img/header/svg-burger/Glove-3.svg');
+        top: -150px;
+        left: -140px;
+        width: 182px;
+        height: 153px;
+        rotate: 435deg;
+    }
+}
+.feature__info {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font-accent;
+    color: $white;
+
+    margin-top: 20px;
+}
+.feature__title {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font-accent;
+    
+}

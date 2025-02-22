@@ -1,0 +1,38 @@
+.tools{
+    position: absolute;
+    @include mediaTablet{
+       display: none;
+    }
+}
+.tools-1{
+    top: 125px;
+    right: -10px;
+}
+.tools-2{
+    top: 95px;
+    right: 395px;
+}
+.tools-3{
+    top: 270px;
+    left: 70px;
+}
+.tools-4{
+    top: 50%;
+    left: -30px;
+}
+.tools-5{
+    top: 75%;
+    left: 30px;
+}
+.tools-6{
+    top:90%;
+    left: 250px;
+}
+.tools-7{
+    bottom:-60px;
+    right: 255px;
+}
+.tools-8{
+    bottom:-65px;
+    right: 17px;
+}
